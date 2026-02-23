@@ -1,0 +1,27 @@
+[
+  {
+    "ContainingType": "bendita_ajuda_back_end.Controllers.ServicoController",
+    "Method": "Listar",
+    "RelativePath": "Servico",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[bendita_ajuda_back_end.Dtos.Servicos.ServicoDto, bendita-ajuda-back-end, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+
+  api:
+    build:
+      context: ./bendita-ajuda-back-end
+    container_name: bendita-api
+    environment:
+      ASPNETCORE_URLS: http://+:80
+    ports:
+      - "5122:80"
+    restart: unless-stopped
+
+  front:
+    build:
+      context: ./bendita-ajuda-front-end
+    container_name: bendita-front
+    depends_on:
+      - api
+    ports:
+      - "4200:80"
+    restart: unless-stopped
